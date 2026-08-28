@@ -34,7 +34,10 @@ def run_demo() -> None:
             engagement=emotion_to_engagement(data["learning_state"]),
             consistency=55,
         )
-        print(f"{data["emotion"]:>8} -> {data["learning_state"]:<11} | difficulty={result["difficulty"]:<8} | activity={result["activity"]}")
+        print(
+            f"{data['emotion']:>8} -> {data['learning_state']:<11} | "
+            f"difficulty={result['difficulty']:<8} | activity={result['activity']}"
+        )
 
 if __name__ == "__main__":
     run_demo()
